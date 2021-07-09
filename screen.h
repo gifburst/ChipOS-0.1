@@ -80,7 +80,7 @@ void BSOD()
   tft.setCursor(0, 0);
   tft.setTextWrap(true);
   tft.setTextColor(TFT_WHITE);
-  tft.print(F("An error has occured, so Arduino has shut down to prevent further damage.\n\nIf this is the first time you're seeing this screen, press the RESET button on the Arduino. If not, reupload the sketch and look for bugs."));
+  tft.print(F("An error has occured, so SquirrOS has shut down to prevent further damage.\n\nIf this is the first time you're seeing this screen, press the RESET button on the Arduino. If not, reupload the sketch and look for bugs."));
 }
 
 
