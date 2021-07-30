@@ -1,26 +1,3 @@
-/*
-MIT License
-Copyright (c) 2019 iProgramInCpp
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-*/
-/*
-  NanoShell Settings
-  Copyright (c) iProgramInCpp 2019.
-*/
 
 #define SETTING_ROTATE 0
 #define SETTING_CLEARROM 1
@@ -35,13 +12,13 @@ uint8_t SelectedItemSettings = SETTING_ROTATE;
 void DrawSettings()
 {
   //tft.fillScreen(S7735_CYAN);
-  testdrawtext("NanoShell Settings", TFT_WHITE);
+  testdrawtext("PCI/OS settings", TFT_WHITE);
 }
 void DrawSettingsUI()
 {
   tft.fillScreen(tft.color565(190, 190, 190));
   tft.fillRect(0, 0, tft.width(), 10, TFT_NAVY);
-  testdrawtext("NanoShell Settings", TFT_WHITE);
+  testdrawtext("PCI/OS Settings", TFT_WHITE);
   Draw2bitImage(rotate_png0, 5 + 5, 10, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(rotate_png1, 13 + 5, 10, 16, PALETTE_CGA_CYAN);
   DrawText(24 + 5, 13, TFT_BLACK, "Rotate Screen");
@@ -53,7 +30,7 @@ void DrawSettingsUI()
   DrawText(24 + 5, 49, TFT_BLACK, "Reboot");
   Draw2bitImage(info_png0, 5 + 5, 64, 16, PALETTE_EGA_BLUE);
   Draw2bitImage(info_png1, 13 + 5, 64, 16, PALETTE_EGA_BLUE);
-  DrawText(24 + 5, 67, TFT_BLACK, "About NanoShell");
+  DrawText(24 + 5, 67, TFT_BLACK, "About PCI/OS");
   Draw2bitImage(exit_png0, 5 + 5, 82, 16, PALETTE_CGA_RED);
   Draw2bitImage(exit_png1, 13 + 5, 82, 16, PALETTE_CGA_RED);
   DrawText(24 + 5, 85, TFT_BLACK, "Exit");
