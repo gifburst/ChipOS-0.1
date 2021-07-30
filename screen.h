@@ -265,7 +265,7 @@ void Draw2bitImageScaled(uint16_t* a, uint8_t x, uint8_t y, uint8_t height, uint
 void DrawDesktop()
 {
   //tft.fillScreen(S7735_CYAN);
-  testdrawtext("SquirrOS Launcher v0.01", TFT_WHITE);
+  testdrawtext("PCI/OS Launcher v0.01", TFT_WHITE);
 }
 void DrawDesktopI()
 {
@@ -283,9 +283,6 @@ void DrawDesktopI()
   DrawText(24 + 5, 49, TFT_BLACK, "Gamepad Test");
   Draw2bitImage(a_png0, 5 + 5, 64, 16, PALETTE_EGA_BLUE);
   Draw2bitImage(a_png1, 13 + 5, 64, 16, PALETTE_EGA_BLUE);
-  DrawText(24 + 5, 67, TFT_BLACK, "Demo");
-  Draw2bitImage(settings_half1_png, 5 + 5, 82, 16, PALETTE_CGA_CYAN);
-  Draw2bitImage(settings_half2_png, 13 + 5, 82, 16, PALETTE_CGA_CYAN);
   DrawText(24 + 5, 85, TFT_BLACK, "Settings");
   Draw2bitImage(cli_png0, 5 + 5, 100, 16, PALETTE_EGA_BLUE);
   Draw2bitImage(cli_png1, 13 + 5, 100, 16, PALETTE_EGA_BLUE);
