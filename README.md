@@ -1,2 +1,2 @@
-# SquirrOS
-the operating system for the SquirrelTop portable computer
+# PCI/OS
+the operating system for the ChipPad computer
