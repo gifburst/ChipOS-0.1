@@ -271,7 +271,7 @@ void DrawDesktopI()
 {
   tft.fillScreen(tft.color565(190, 190, 190));
   tft.fillRect(0, 0, tft.width(), 10, TFT_NAVY);
-  testdrawtext("ChipOS v0.0.1", TFT_WHITE);
+  testdrawtext("ChipOS v0.0.1", TFT_MAGENTA);
   Draw2bitImage(notepad_half1_png, 5 + 5, 10, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(notepad_half2_png, 13 + 5, 10, 16, PALETTE_CGA_CYAN);
   DrawText(24 + 5, 13, TFT_BLACK, "ChipNotes");
