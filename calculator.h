@@ -152,7 +152,7 @@ void draw_calc_window()
   tft.fillRect(0, 0, tft.width(), 10, TFT_NAVY);
   tft.setCursor(2, 2);
   tft.setTextColor(TFT_WHITE);
-  tft.print(F("Squirrel Calculator // B - Exit"));
+  tft.print(F("ChipCalculator // B - Exit"));
   tft.setTextSize(1);
 
   keyboard_height = tft.height();
