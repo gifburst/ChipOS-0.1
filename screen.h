@@ -274,10 +274,10 @@ void DrawDesktopI()
   testdrawtext("ChipOS v0.0.1", TFT_WHITE);
   Draw2bitImage(notepad_half1_png, 5 + 5, 10, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(notepad_half2_png, 13 + 5, 10, 16, PALETTE_CGA_CYAN);
-  DrawText(24 + 5, 13, TFT_BLACK, "Squirrel pad");
+  DrawText(24 + 5, 13, TFT_BLACK, "ChipNotes");
   Draw2bitImage(calculator_half1_png, 5 + 5, 28, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(calculator_half2_png, 13 + 5, 28, 16, PALETTE_CGA_CYAN);
-  DrawText(24 + 5, 31, TFT_BLACK, "Calculator");
+  DrawText(24 + 5, 31, TFT_BLACK, "ChipCalculator");
   Draw2bitImage(controller_half1_png, 5 + 5, 46, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(controller_half2_png, 13 + 5, 46, 16, PALETTE_CGA_CYAN);
   DrawText(24 + 5, 49, TFT_BLACK, "Gamepad Test");
