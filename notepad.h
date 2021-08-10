@@ -82,7 +82,7 @@ void draw_notepad_window()
   tft.fillRect(0, 0, tft.width(), 10, TFT_NAVY);
   tft.setCursor(1, 1);
   tft.setTextColor(TFT_WHITE);
-  tft.print(F("NS Notepad // [B] - Exit"));
+  tft.print(F("ChipNotes // [B] - Exit"));
 }
 
 void draw_keyboard()
