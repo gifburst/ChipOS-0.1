@@ -80,7 +80,7 @@ void BSOD()
   tft.setCursor(0, 0);
   tft.setTextWrap(true);
   tft.setTextColor(TFT_WHITE);
-  tft.print(F("An error has occured, so SquirrOS has shut down to prevent further damage.\n\nIf this is the first time you're seeing this screen, press the RESET button on the Arduino. If not, reupload the sketch and look for bugs."));
+  tft.print(F("An error has occured, so ChipOS has shut down to prevent further damage.\n\nIf this is the first time you're seeing this screen, press the RESET button on the Arduino. If not, reupload the sketch and look for bugs."));
 }
 
 
@@ -151,8 +151,8 @@ void ShowAboutDlg()
 {
   dlg_isShown = true;
   dlg_responsePositive = false;
-  dlg_text1 = "SquirrOS v0.01 alpha.   ";
-  dlg_text2 = "(c) 2021 SquirrelCom   ";
+  dlg_text1 = "ChipOS v0.01 alpha.   ";
+  dlg_text2 = "(c) 2021 Squirrel Computers   ";
   dlg_text3 = "www.github.com/squirrelcom";
   dlg_caption = "About SquirrOS";
   dlg_option1 = "  OK  ";
@@ -265,26 +265,26 @@ void Draw2bitImageScaled(uint16_t* a, uint8_t x, uint8_t y, uint8_t height, uint
 void DrawDesktop()
 {
   //tft.fillScreen(S7735_CYAN);
-  testdrawtext("PCI/OS Launcher v0.01", TFT_WHITE);
+  testdrawtext("ChipOS v0.0.1", TFT_WHITE);
 }
 void DrawDesktopI()
 {
   tft.fillScreen(tft.color565(190, 190, 190));
-  tft.fillRect(0, 0, tft.width(), 10, TFT_NAVY);
+  tft.fillRect(0, 0, tft.width(), 10, TFT_BLACK);
   testdrawtext("ChipOS v0.0.1", TFT_MAGENTA);
   Draw2bitImage(notepad_half1_png, 5 + 5, 10, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(notepad_half2_png, 13 + 5, 10, 16, PALETTE_CGA_CYAN);
-  DrawText(24 + 5, 13, TFT_BLACK, "ChipNotes");
+  DrawText(24 + 5, 13, TFT_WHITE, "ChipNotes");
   Draw2bitImage(calculator_half1_png, 5 + 5, 28, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(calculator_half2_png, 13 + 5, 28, 16, PALETTE_CGA_CYAN);
-  DrawText(24 + 5, 31, TFT_BLACK, "ChipCalculator");
+  DrawText(24 + 5, 31, TFT_WHITE, "ChipCalculator");
   Draw2bitImage(controller_half1_png, 5 + 5, 46, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(controller_half2_png, 13 + 5, 46, 16, PALETTE_CGA_CYAN);
-  DrawText(24 + 5, 49, TFT_BLACK, "Gamepad Test");
+  DrawText(24 + 5, 49, TFT_WHITE, "Gamepad Test");
   Draw2bitImage(a_png0, 5 + 5, 64, 16, PALETTE_EGA_BLUE);
   Draw2bitImage(a_png1, 13 + 5, 64, 16, PALETTE_EGA_BLUE);
-  DrawText(24 + 5, 85, TFT_BLACK, "Settings");
+  DrawText(24 + 5, 85, TFT_WHITE, "Settings");
   Draw2bitImage(cli_png0, 5 + 5, 100, 16, PALETTE_EGA_BLUE);
   Draw2bitImage(cli_png1, 13 + 5, 100, 16, PALETTE_EGA_BLUE);
-  DrawText(24 + 5, 104, TFT_BLACK, "Command Line");
+  DrawText(24 + 5, 104, TFT_WHITE, "Command Line");
 }
