@@ -1,2 +1,2 @@
-# PCI/OS
-the operating system for the ChipPad computer
+# ChipOS
+the operating system for the ChipLet computer
