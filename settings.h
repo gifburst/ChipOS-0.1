@@ -17,8 +17,8 @@ void DrawSettings()
 void DrawSettingsUI()
 {
   tft.fillScreen(tft.color565(190, 190, 190));
-  tft.fillRect(0, 0, tft.width(), 10, TFT_NAVY);
-  testdrawtext("PCI/OS Settings", TFT_WHITE);
+  tft.fillRect(0, 0, tft.width(), 10, TFT_BLACK);
+  testdrawtext("ChipOS Settings", TFT_WHITE);
   Draw2bitImage(rotate_png0, 5 + 5, 10, 16, PALETTE_CGA_CYAN);
   Draw2bitImage(rotate_png1, 13 + 5, 10, 16, PALETTE_CGA_CYAN);
   DrawText(24 + 5, 13, TFT_BLACK, "Rotate Screen");
@@ -30,7 +30,7 @@ void DrawSettingsUI()
   DrawText(24 + 5, 49, TFT_BLACK, "Reboot");
   Draw2bitImage(info_png0, 5 + 5, 64, 16, PALETTE_EGA_BLUE);
   Draw2bitImage(info_png1, 13 + 5, 64, 16, PALETTE_EGA_BLUE);
-  DrawText(24 + 5, 67, TFT_BLACK, "About PCI/OS");
+  DrawText(24 + 5, 67, TFT_BLACK, "About ChipOS");
   Draw2bitImage(exit_png0, 5 + 5, 82, 16, PALETTE_CGA_RED);
   Draw2bitImage(exit_png1, 13 + 5, 82, 16, PALETTE_CGA_RED);
   DrawText(24 + 5, 85, TFT_BLACK, "Exit");
